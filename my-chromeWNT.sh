@@ -18,6 +18,7 @@ ICON_EXIT="🚪"
 # Function to display ASCII logo and Telegram link
 display_ascii() {
     echo -e "    ${RED}    W I N G S   N O D E   T E A M ${RESET}"
+    echo -e "    ${RED}    ----------------------------- ${RESET}"
     echo -e "    ${MAGENTA}${ICON_TELEGRAM} Follow us on Telegram: https://t.me/WingsNodeTeam${RESET}"
     echo -e "    ${MAGENTA}📢 Follow us on Twitter: https://x.com/WingsNodeTeam${RESET}"
     echo -e ""
