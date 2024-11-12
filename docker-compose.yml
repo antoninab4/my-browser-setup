@@ -12,7 +12,7 @@ services:
       - CUSTOM_USER=${USERNAME}
       - PASSWORD=${PASSWORD}
       - LANGUAGE=en_US.UTF-8
-      - CHROME_CLI=https://app.getgrass.io/register/?referralCode=Auv6lEKD7aBCRAM https://app.gradient.network/signup?code=30U08D https://app.blockmesh.xyz/register?invite_code=1140b118-e63d-415f-b02b-a327b933debe https://app.nodepay.ai/register?ref=GBQ0ZDMo3zGcw0V
+      - CHROME_CLI=https://app.getgrass.io/register/?referralCode=Auv6lEKD7aBCRAM https://app.gradient.network/signup?code=30U08D https://app.blockmesh.xyz/register?invite_code=1140b118-e63d-415f-b02b-a327b933debe https://app.nodepay.ai/register?ref=JpxFKavaDveyFUL
     volumes:
       - ${HOME}/chromium/config:/config
     ports:
