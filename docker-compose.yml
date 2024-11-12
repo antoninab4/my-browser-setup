@@ -1,0 +1,21 @@
+version: '3.8'
+services:
+  chromium:
+    image: lscr.io/linuxserver/chromium:latest
+    container_name: WingsNodeTeam
+    privileged: true
+    environment:
+      - TITLE=WingsNodeTeam
+      - DISPLAY=:1
+      - PUID=1000
+      - PGID=1000
+      - CUSTOM_USER=${USERNAME}
+      - PASSWORD=${PASSWORD}
+      - LANGUAGE=en_US.UTF-8
+      - CHROME_CLI=https://example.com/register
+    volumes:
+      - ${HOME}/chromium/config:/config
+    ports:
+      - "0.0.0.0:${PORT}:3000"  
+    shm_size: '4gb'
+    restart: unless-stopped
